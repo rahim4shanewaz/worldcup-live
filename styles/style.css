@@ -13,6 +13,7 @@ main{
     flex-direction: column;
     align-items: center;
 
+
 }
 .banner{
     background: url(/images/image-4.jpg);
@@ -23,7 +24,8 @@ main{
     border-radius: 20px;
     margin: 0;
     padding: 0;
-    width: 90%
+    width: 90%;
+    margin-bottom: 50px;
 }
 .banner-cont{
     height: 300px;
@@ -44,14 +46,7 @@ main{
     color: white;
     text-align: right;
 }
-.button{
-    text-decoration: none;
-    background-color: red;
-    padding: 10px;
-    font-weight: 600;
-    color: white;
-    border-radius: 5px;
-}
+
 .button-pos{
     float: right;
     margin-top: 30px;
@@ -73,7 +68,179 @@ main{
     color: white;
     padding-left: 10px;
 }
-@media only screen and (max-width: 480px) {
+
+
+.live-matches{
+    display: grid;
+    grid-template-columns: 250px auto;
+    justify-content: space-between;
+    height: 500px;
+    width: 90%;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+}
+.side-menu{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.match-button-pos{
+    margin-top: 35px;
+}
+.match-button-dsn{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.match-button-dsn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.match-button-dsn-active{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}
+.match-button-dsn-active a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.match-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-column-gap: 10px;
+    
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.match-list{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 249);
+
+}
+.trans-button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+.trans-button a{
+    text-decoration: none;
+    color: black;
+
+}
+.match-list h4{
+    padding-left: 10px;
+}
+
+.comment-time{
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+.gap{
+    padding-bottom:10px ;
+}
+.match-list img{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 30px;
+    border-radius: 10px;
+   }
+#footer-bg{
+    background-color: black;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+hr{
+    width: 95%;
+    margin: 20px;
+    border: 1px solid gray;}
+.footer-link ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.footer-link ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+
+
+.social ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+   
+.social ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
     .banner{
     background: url(/images/image-4.jpg);
     background-size: cover;
