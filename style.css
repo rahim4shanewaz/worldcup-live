@@ -36,8 +36,8 @@ main{
 .banner-cont{
     height: 550px;
     width: 40%;
-    padding: 50px;
-    margin: 50px;
+    padding: 20px;
+    margin: 20px;
     padding-bottom: 50px;
     float: right;
     padding-top: 50px;
@@ -79,12 +79,12 @@ main{
 
 /* hover css and trnsition on banner */
 .banner:hover .img1{
-    transform: translate(450px);
+    transform: translate(420px);
     visibility: visible;
     
 }
 .banner:hover .img2{
-    transform: translate(-350px);
+    transform: translate(-320px);
     visibility: visible; 
 }
 .banner:hover .animation-content-result{
@@ -123,10 +123,11 @@ main{
     position: relative;
     right: 1200px;
     margin-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
+    
     padding-top: 5px;
     height: 60px;
-    width: 70%;
+    width: 90%;
     border-bottom: 3px solid goldenrod;
     border-top: 3px solid goldenrod;
     visibility: hidden;
