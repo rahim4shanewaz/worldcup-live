@@ -36,7 +36,9 @@ main{
 .banner-cont{
     height: 550px;
     width: 40%;
-    padding: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
     margin: 20px;
     padding-bottom: 50px;
     float: right;
@@ -79,17 +81,17 @@ main{
 
 /* hover css and trnsition on banner */
 .banner:hover .img1{
-    transform: translate(420px);
+    transform: translate(390px);
     visibility: visible;
     
 }
 .banner:hover .img2{
-    transform: translate(-320px);
+    transform: translate(-340px);
     visibility: visible; 
 }
 .banner:hover .animation-content-result{
     visibility: visible;
-    transform: translate(1250px);
+    transform: translate(1220px);
 }
 .animaton{
     height: 180px;
