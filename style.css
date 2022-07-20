@@ -166,7 +166,7 @@ main{
     grid-template-columns: 250px auto;
     justify-content: space-between;
     height: 500px;
-    width: 90%;
+    width: 85%;
     border-radius: 20px;
     margin: 0;
     padding: 0;
@@ -240,7 +240,7 @@ main{
     margin-left: 20px;
 }
 .match-list{
-    width: 300px;
+    width: 280px;
     height: 350px;
     background-color: white;
     margin-bottom: 15px;
