@@ -1,0 +1,647 @@
+
+/* Universal padding and margine */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main body */
+main{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+/* banner css */
+.banner{
+    background: url(/images/image-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 90%; 
+    margin-bottom: 50px;
+}
+.banner-cont{
+    height: 550px;
+    width: 40%;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    margin: 20px;
+    padding-bottom: 50px;
+    float: right;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.banner-cont h1{
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+    
+}
+.banner-cont p{
+    color: white;
+    text-align: right;
+}
+.button-pos{
+    float: right;
+    margin-top: 30px;
+}
+.button-dsn{
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+}
+.button-dsn:hover{
+    background-color: green;
+}
+.button-dsn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* hover css and trnsition on banner */
+.banner:hover .img1{
+    transform: translate(390px);
+    visibility: visible;
+    
+}
+.banner:hover .img2{
+    transform: translate(-340px);
+    visibility: visible; 
+}
+.banner:hover .animation-content-result{
+    visibility: visible;
+    transform: translate(1220px);
+}
+.animaton{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation-content1{
+    margin-top: 10px;
+    padding-right: 30px;
+    height: 40px;
+    width: 90%;
+    float: right;
+    
+}
+.img1{
+    height: 50px;
+    width: 50px;
+    transition: transform 2s ease-out .6s, background-color .5s ease-in 2s;
+    visibility: hidden;
+    position: relative;
+   
+}
+.animation-content-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 1200px;
+    margin-top: 10px;
+    padding-left: 20px;
+    
+    padding-top: 5px;
+    height: 60px;
+    width: 90%;
+    border-bottom: 3px solid goldenrod;
+    border-top: 3px solid goldenrod;
+    visibility: hidden;
+    transition: transform 2s ease-out .6s, background-color .5s ease-in 2s;
+}
+.animation-content-result h3{
+    color: black;
+}
+.animation-content2{
+    
+    margin-top: 10px;
+    padding-left: 30px;
+    height: 40px;
+    width: 90%;
+    float: left;
+   
+}
+.img2{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    float: right;
+    transition: transform 2s ease-out .6s, background-color .5s ease-in 2s;
+    visibility: hidden;
+}
+/* icon css */
+.fa-solid{
+    color: white;
+    padding-left: 10px;
+}
+/* live match section css */
+.live-matches{
+    display: grid;
+    grid-template-columns: 250px auto;
+    justify-content: space-between;
+    height: 500px;
+    width: 90%;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+/* side menu box css */
+.side-menu{
+    background: black;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.match-button-pos{
+    margin-top: 35px;
+}
+.match-button-dsn{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.match-button-dsn:hover{
+    background-color: green;
+}
+.match-button-dsn a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+    font-size: 20px;
+}
+.match-button-dsn a:visited{
+    color: red;
+}
+
+
+/* visited link css*/
+.match-button-dsn-active{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}
+.match-button-dsn-active a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.match-button-dsn-active:hover{
+    background-color: goldenrod;
+}
+.match-button-dsn-active a:visited{
+    color: black;
+}
+/* match-list box css */
+.match-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.match-list{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 249);
+
+}
+
+.up-match-list{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 249);
+    border: 1px solid gainsboro;
+}
+.match-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+.match-img img{
+    width: 40%;
+}
+.match-details{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+.match-details h2{
+    text-align: center;
+}
+.match-details p{
+    text-align: center;
+}
+.match-details a{
+    text-decoration: none;
+    color: black;
+}
+.match-details a:hover{
+    color: gold;
+}
+.trans-button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+.trans-button:hover{
+    background-color: green;
+    border: none;
+}
+
+.trans-button a{
+    text-decoration: none;
+    color: black;
+}
+.trans-button a:visited{
+    color: red;
+}
+.match-list h4{
+    padding-left: 10px;
+}
+
+.comment-time{
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+.gap{
+    padding-bottom:10px ;
+}
+.match-list img{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 30px;
+    border-radius: 10px;
+   }
+.see-more-option{
+    display: none;
+}
+
+
+
+/* footer css */
+#footer-bg{
+    background-color: black;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+hr{
+    width: 95%;
+    margin: 20px;
+    border: 1px solid gray;}
+.footer-link ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.footer-link ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+
+.footer-link ul li a:visited{
+    color: red;
+}
+.footer-link ul li a:hover{
+    color: gold;
+}
+.social ul li a:hover{
+    color: gold;
+}
+
+
+/* social icon and link css */
+.social ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.social ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.fa-brands{
+    font-size: 30px;
+}
+
+/* responsive css for mobile screen */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .animaton{
+        display: none;
+    }
+    .banner{
+    background: url(/images/image-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%
+    }
+    .banner-cont{
+        height: 200px;
+        width: 80%;
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-cont h1{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .banner-cont p{
+        color: white;
+        text-align: center;
+}
+
+.live-matches{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        height: auto;
+        width: 90%;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+}
+
+.side-menu{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.match-button-dsn{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.match-box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid-column-gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#footer-bg{
+    background-color: black;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    gap: 40px;
+    align-items: center;
+}
+}
+
+
+/* responsive css for tab screen */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .animaton{
+        display: none;
+    }
+    .banner{
+    background: url(/images/image-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%
+    }
+    .banner-cont{
+        height: 300px;
+        width: 40%;
+        padding: 0px;
+        margin: 20px;
+        padding-top: 40px;
+        float: right;
+    }
+    .banner-cont h1{
+        color: white;
+        font-size: 30px;
+        text-align: right;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .banner-cont p{
+        color: white;
+        text-align: right;
+}
+
+.live-matches{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        height: auto;
+        width: 90%;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        
+        
+}
+.side-menu{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: white;
+}
+.match-button-dsn{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.match-button-dsn a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+    font-size: 15px;
+}
+.match-button-dsn-active{
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}
+.match-button-dsn-active a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.match-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-column-gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.see-more-option{
+    display: flex
+}
+ .button-position{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   }
+.seemore-button{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}
+.seemore-button:hover{
+    background-color: green;
+}
+.seemore-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+#footer-bg{
+    background-color: black;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+}
+
